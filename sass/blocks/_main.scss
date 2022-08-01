@@ -1,0 +1,191 @@
+.main {
+
+  overflow-y: scroll;
+  height: 600px;
+
+  &__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 151px;
+    background: $wihte;
+    border-radius: 10px;
+    padding: 0 32px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__flex {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  &__heading {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    margin: 0;
+    margin-bottom: 4px;
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__lorem {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: $darc-wihte;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    padding: 5px 16px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: $blue;
+    background: $wihte-blue;
+    width: 111px;
+    text-align: center;
+    @include text-decaration;
+    border-radius: 10px;
+  }
+
+  
+
+  &__span {
+    width: 40px;
+    height: 53px;
+    background: $wihte-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: $darc-blue;
+    @include text-decaration;
+
+    &:hover {
+      background-color: #cfd7ff;
+    }
+
+    &:active {
+      background-color: $blue;
+      color: $wihte;
+    }
+    &::before {
+      content: "";
+      @include before-after(center, auto);
+      background-image: url("../../images/vektor1.svg");
+      width: 8px;
+      height: 4px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__wood {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.222222px;
+    color: $darc-blue;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      background-image: url("../../images/chat.svg");
+      @include before-after(center, auto);
+      width: 18px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .main {
+    max-width: 347px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    &__wraper {
+      width: 327px;
+      height: auto;
+      align-items: flex-end;
+      padding: 24px;
+    }
+    &__box {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      align-self: start;
+    }
+
+    &__heading {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    &__link {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 19px;
+      margin-bottom: 16px;
+    }
+
+    &__span {
+      width: 70px;
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &::before {
+        align-items: center;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+      }
+    }
+
+    &__flex {
+      margin: 0;
+    }
+
+    &__wood {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,405 @@
+.body__box {
+  display: flex;
+  max-width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  margin-right: 30px;
+
+  &__wraper1 {
+    background: $graden;
+    width: 255px;
+    height: 137px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    margin-bottom: 24px;
+
+    &--heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: -0.25px;
+      color: $wihte;
+      margin: 0;
+      margin-top: 62px;
+      letter-spacing: -0.25px;
+    }
+
+    &--text {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 0;
+      color: $wihte;
+    }
+
+    &--image {
+      display: none;
+    }
+  }
+
+  &__filter {
+    width: 255px;
+    height: 166px;
+    background-color: $wihte;
+    border-radius: 10px;
+    padding-top: 24px;
+    padding-left: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    @include list-stiyle();
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__iteam {
+    padding: 5px 16px;
+    background-color: $wihte-blue;
+    margin-left: 8px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    &:hover {
+      background: #cfd7ff;
+    }
+    &:active {
+      background: $blue;
+    }
+  }
+
+  &__link {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: $blue;
+    @include text-decaration;
+    &:active {
+      color: $wihte;
+    }
+  }
+  &__box {
+    width: 255px;
+    height: 178px;
+    background: $wihte;
+    border-radius: 10px;
+    padding-top: 19px;
+    justify-content: center;
+    padding-top: 19px;
+
+    &--wraper {
+      margin-bottom: 24px;
+      padding: 0 24px;
+
+      @include display(row, center, space-between);
+    }
+    &--title {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+      color: $wihte-red;
+    }
+
+    &--link {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 19px;
+      color: $blue;
+    }
+
+    &--iteam {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: $darc-wihte;
+      margin: 0;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.befor2 {
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $orange;
+    border-radius: 50%;
+    // margin-right: 16px;
+  }
+
+  &::after {
+    margin-left: 117px;
+    content: "2";
+  }
+}
+.befor3 {
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $fiyalet;
+    border-radius: 50%;
+    // margin-right: 16px;
+  }
+
+  &::after {
+    margin-left: 99px;
+    content: "3";
+  }
+}
+.befor1 {
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $color-blue;
+    border-radius: 50%;
+    // margin-right: 16px;
+  }
+
+  &::after {
+    margin-left: 147px;
+    content: "1";
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: $darc-blue;
+  height: 72px;
+  padding-left: 24px;
+  padding-right: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.right {
+  width: 100%;
+  // display: flex;
+  justify-content: space-between;
+
+  &__filter {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 38px;
+    color: $wihte-blue;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../../images/vektor\ \(1\).svg");
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 4px;
+      margin-left: 8px;
+    }
+    &-text {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 38px;
+      color: $wihte-blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .generals__box {
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__wraper1 {
+      width: 223px;
+      height: 178px;
+
+      &--heading {
+        margin-top: 103px;
+      }
+    }
+
+    &__filter {
+      width: 223px;
+      height: 178px;
+      margin-right: 28px;
+    }
+
+    &__box {
+      width: 223px;
+      height: 178px;
+
+      &--wraper {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .body__box {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left {
+    margin: 0;
+    padding: 0;
+    &__wraper1 {
+      width: 100%;
+      height: 72px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 0px;
+      margin: 0;
+
+      &--heading {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0;
+      }
+
+      &--text {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+      }
+      &--image {
+        display: flex;
+        margin-right: 24px;
+      }
+    }
+
+    &__filter {
+      display: none;
+    }
+
+    &__box {
+      display: none;
+    }
+  }
+
+  .right {
+    .header {
+      border-radius: 0;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__link {
+      margin: 0;
+      display: flex;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      /* identical to box height */
+
+      text-align: right;
+
+      &-text {
+        margin: 0;
+      }
+
+      .button1 {
+        min-width: 134px;
+        min-height: 40px;
+      }
+    }
+  }
+
+  .generals__box {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    height: 100%;
+    background: $wihte-blue;
+    padding: 24px;
+    z-index: 100;
+
+    .left__filter {
+      display: flex;
+    }
+
+    .left__box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .generals__none {
+    display: none;
+  }
+
+  // qoshb ayruvchi class bolb generals none yoqlsa gamburger menu kornmaydi aksi bosa gamburger menu ishga tushad
+}

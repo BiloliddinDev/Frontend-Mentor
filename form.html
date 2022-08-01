@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Forma</title>
+  </head>
+  <body>
+    <div class="form">
+      <a href="./index.html" class="form__link">Go Back</a>
+      <div class="form__wraper">
+        <p class="form__image">+</p>
+        <form
+          target="_blank"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <div class="form__filter">
+            <h2 class="form__heading">Create New Feedback</h2>
+            <p class="form__text">Feedback Title</p>
+            <p class="form__lorem">Add a short, descriptive headline <br /></p>
+            <input
+            
+              placeholder="Add a dark theme option"
+              class="form__input"
+              type="text"
+              name="malumot"
+            />
+          </div>
+          <p class="form__text">Category</p>
+          <p class="form__lorem">Choose a category for your feedback</p>
+          <ul class="form__list">
+            <li class="form__iteam">
+              <a href="#" class="form__anker">Feature</a>
+              <ul class="list__form">
+                <!-- <li class="iteam__form">Feature</li>
+                <li class="iteam__form">UI</li>
+                <li class="iteam__form">UX</li>
+                <li class="iteam__form">Enhancement</li>
+                <li class="iteam__form">Bug</li> -->
+              </ul>
+            </li>
+          </ul>
+          <div class="form__filter1">
+            <p class="form__text">Feedback Detail</p>
+            <p class="form__lorem">
+              Include any specific comments on what should be improved, added,
+              etc. <br />
+            </p>
+            <textarea class="form__textarea" name="sms"></textarea>
+          </div>
+          <div class="form__buttons">
+            <button type="reset" class="form__rest button3">Cancel</button>
+            <button type="submit " class="form__send button1">
+              Add Feedback
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

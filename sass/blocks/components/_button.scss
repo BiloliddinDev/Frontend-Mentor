@@ -1,0 +1,67 @@
+.button1 {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background: $fiyalet;
+  border-radius: 10px;
+  min-width: 158px;
+  min-height: 44px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $wihte;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: #c75af6;
+    color: $wihte-blue;
+  }
+}
+
+.button2 {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background: $blue;
+  border-radius: 10px;
+  min-width: 158px;
+  min-height: 44px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $wihte;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: #7c91f9;
+    color: $wihte-blue;
+  }
+}
+
+.button3 {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background: $wihte-red;
+  border-radius: 10px;
+  min-width: 158px;
+  min-height: 44px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $wihte;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: $darc-wihte;
+    color: $wihte-blue;
+  }
+}
